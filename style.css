@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mydiv {
+margin-top: auto;
+
+}
+
+#contenedor {
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: #121212;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(https://thumbs.dreamstime.com/z/football-world-cup-background-banner-soccer-championship-football-world-cup-background-banner-soccer-championship-qatar-230974578.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 20em; 
+
+  box-sizing: border-box;
+
+}
+
+.sometxt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mydiv {
+  position: relative;
+  margin: 10% auto 0;
+  width: 50%;
+  height: 70px;
+      background: linear-gradient(90deg, #000, #323232);
+}
+
+.animate-bg:before, .animate-bg:after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,
+  #e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+  background-size: 300%;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  z-index: -1;
+  animation: BGgradient 15s ease infinite;
+}
+
+@keyframes BGgradient {
+  0% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 330%;
+  }
+}
+
+.animate-bg:after {
+  filter: brightness(1.4);
+  filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+  filter: blur(15px);
+}
+
+
+.matches {
+  border: 5px solid black;
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  background-color: rgba(22, 43, 20, 0.87);
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.match {
+  margin: 10px;
+}
+
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  font-size: 11px;
+  font-family: Arial;
+}
+
+.group-table {
+  margin: 5px;
+  text-align: center;
+  padding: 3px 10px;
+  border: 2px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: gray;
+  color: black;
+
+  
+  
+  ;
+  
+  width: auto;
+}
+
+.control-botton {
+  text-align: center;
+  }
+
+.llaves {
+display: flex;
+justify-content: space-between;
+}
+
+.llaves input {
+width: 150px;
+border: 5px solid aqua;
+}
+
+.octavos {
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.cuartos {
+padding: 25px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.semis {
+padding: 75px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.final {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+input { 
+
+width: 50px;
+}
+.resultados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:  30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 13%;
+  height: 40px;
+  background: #141414;
+  color: #fff;
+  font-family: 'Roboto', arial;
+  font-size: 20px;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 5px;
+
+}
+.resultados:hover {
+  background: #ccc;
+}
+
+}
+
